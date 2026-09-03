@@ -1,0 +1,33 @@
+<Git>
+주요 개념 및 특징
+1) 버전 관리 (Version Control): 파일이 어떻게 바뀌었는지 기록하고, 언제든 이전 상태로 되돌릴 수 있습니다.
+2) 분산형 저장소 (Distributed): 내 컴퓨터(로컬)에 전체 기록이 저장되므로 인터넷이 안 되는 곳에서도 작업과 버전 기록을 할 수 있습니다.
+3) 브랜치 (Branch): 원본 코드에 영향을 주지 않고 독립적으로 기능을 개발하거나 실험할 수 있는 공간입니다.
+4) Git vs GitHub: Git은 내 컴퓨터에 설치해 사용하는 프로그램(도구)이고, GitHub은 Git으로 관리한 기록을 클라우드에 올리고 공유하는 웹 서비스입니다.
+
+2. Git의 세 가지 상태Git이 파일을 다루는 기본 상태는 다음과 같습니다.
+Modified (수정): 파일을 고쳤지만 아직 저장소에 안전하게 기록하지 않은 상태.
+Staged (준비): 수정한 파일을 다음 기록(커밋)에 포함하겠다고 표시한 상태.
+Committed (확정): 준비된 파일이 로컬 데이터베이스에 안전하게 저장된 상태.
+기본 명령어 (git init, add(staging:준비), commit(버전저장) 등)
+브랜치 사용법 (branch, merge(병합))GitHub 연동 방법
+
+주요 개념 용어
+init : 저장소 지정하기
+add : 저장 준비하기(staging)
+commit : 버전 저장하기
+branch : 작업 분리하기
+	1) git branch 목록조회
+	2) git branch (branch이름)
+push : 로컬 저장소에 있는 커밋을 원격 저장소로 올리는 행위
+레포지토리(Repository, 저장소)
+	1) remote add origin 원격 저장소와 연동
+	2) push -u <remote> <branch>
+
+
+upstream = 최상위 원본 저장소(repository)
+origin = remote repository(원격 저장소 닉네임)
+
+Powershell : MS에서 개발한 고급 명령 프롬프트(CLI)
+형상 관리(SCM, Software Configuration Management)
+소프트웨어 개발 과정에서 소스 코드뿐만 아니라 문서, 설계서 등 모든 변경 사항을 체계적으로 추적하고 통제하는 관리 활동
